@@ -11,25 +11,28 @@
   <style>
     .contact-section {
       display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       gap: 2rem;
       align-items: flex-start;
+      flex-direction: row;
     }
     .contact-info {
-      flex: 1 1 60%;
+      flex: 1 1 300px;
       min-width: 250px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      order: 1;
     }
     .contact-image {
-      flex: 0 0 40%;
+      flex: 0 0 320px;
       text-align: center;
+      order: 2;
     }
     .contact-image img {
       width: 100%;
       height: auto;
+      max-height: 180px;
       object-fit: cover;
       border-radius: 8px;
     }
@@ -46,6 +49,17 @@
     }
     section.why-provative ul li::marker {
       content: "✔️ ";
+    }
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+      .contact-info {
+        order: 1;
+      }
+      .contact-image {
+        order: 2;
+      }
     }
   </style>
 </head>
@@ -106,4 +120,3 @@
   </footer>
 </body>
 </html>
-
