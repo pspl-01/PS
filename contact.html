@@ -8,6 +8,40 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .contact-info {
+      flex: 1 1 300px;
+      min-width: 250px;
+    }
+    .contact-image {
+      flex: 0 0 320px;
+      text-align: center;
+    }
+    .contact-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .contact-caption {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    section.why-provative ul {
+      padding-left: 1.2rem;
+      line-height: 1.6;
+    }
+    section.why-provative ul li::marker {
+      content: "✔️ ";
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -32,26 +66,31 @@
 
   <main>
     <section>
-      <h2>Send Us a Message</h2>
-      <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" required /><br /><br />
-
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
-
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
-
-        <button type="submit" disabled>Send</button>
-      </form>
+      <h2>🚀 Let’s Simplify Your IT Journey</h2>
+      <p>If you're looking to enhance your IT infrastructure or streamline global provisioning, we’re ready to help. Reach out to discuss your goals and build a solution that works.</p>
     </section>
 
-    <section>
-      <h2>Contact Details</h2>
-      <p>Email: <a href="mailto:sales@provativeservices.com">sales@provativeservices.com</a></p>
-      <p>Phone: +91-XXXXXXXXXX</p>
-      <p>Location: New Delhi, India</p>
+    <section class="contact-section">
+      <div class="contact-info">
+        <h2>📍 Contact Details</h2>
+        <p><strong>📧 Email:</strong> <a href="mailto:sales@provativeservices.com">sales@provativeservices.com</a></p>
+        <p><strong>📞 Phone:</strong> +91-XXXXXXXXXX</p>
+        <p><strong>📌 Location:</strong> Mall Rd, Delhi</p>
+        <p><a href="https://maps.app.goo.gl/54yxdjpRTvRxSDBj7" target="_blank">🗺️ View on Google Maps</a></p>
+      </div>
+      <div class="contact-image">
+        <img src="assets/images/contact-visual.jpg" alt="Provative Services office or branding" />
+        <div class="contact-caption">Provative Services – Empowering Technology That Works as One</div>
+      </div>
+    </section>
+
+    <section class="why-provative">
+      <h2>💡 Why Provative?</h2>
+      <ul>
+        <li><strong>Modular automation</strong> – Build scalable workflows with minimal user intervention</li>
+        <li><strong>Seamless collaboration</strong> – Integrate voice, calendar, and provisioning across platforms</li>
+        <li><strong>Strategic provisioning</strong> – Align IT delivery with business goals and user experience</li>
+      </ul>
     </section>
   </main>
 
@@ -60,10 +99,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
-
-
