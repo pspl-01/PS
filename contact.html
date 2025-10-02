@@ -10,24 +10,18 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
     .contact-section {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 320px;
       gap: 2rem;
-      align-items: flex-start;
-      flex-direction: row;
+      align-items: start;
     }
     .contact-info {
-      flex: 1 1 300px;
-      min-width: 250px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      order: 1;
     }
     .contact-image {
-      flex: 0 0 320px;
       text-align: center;
-      order: 2;
     }
     .contact-image img {
       width: 100%;
@@ -52,13 +46,10 @@
     }
     @media (max-width: 768px) {
       .contact-section {
-        flex-direction: column;
-      }
-      .contact-info {
-        order: 1;
+        grid-template-columns: 1fr 1fr;
       }
       .contact-image {
-        order: 2;
+        justify-self: end;
       }
     }
   </style>
